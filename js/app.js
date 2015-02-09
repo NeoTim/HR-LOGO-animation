@@ -10,6 +10,7 @@
 
         var time = new TimelineLite()
             time
+              .to($title, 0, {autoAlpha:1})
               .staggerFrom($s.sm.circles  , 0.6, {drawSVG:"0", delay:1}, 0)
               .staggerFrom($s.edges.bottom, 0.2, {drawSVG:"0", autoAlpha:1}, 0.2)
               .staggerFrom($s.md.circles  , 0.6, {drawSVG:"100% 100%"}, 0)
